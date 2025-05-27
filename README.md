@@ -1,118 +1,156 @@
-# TaskEasy - Task Management Application
+# 🚀 TaskEasy - Task Management Application
 
-A lightweight task management web application built using Extreme Programming (XP) practices.
+A **lightweight** and **responsive** task management web application built with **Extreme Programming (XP)** practices and modern web technologies.
 
-## Features
+---
 
-### Core Task Management
-- Create tasks with title, description, priority, and status
-- View tasks sorted by priority
-- Update and delete tasks
-- Filter tasks by status (To-Do, In Progress, Done)
+## ✨ Features
 
-### Enhanced Features
-- **Task Categories**: Organize tasks by categories (Work, Personal, Study, Health, Finance, Home, Other)
-- **Due Dates**: Set and track deadlines for tasks
-- **Task Distribution Visualization**: Visual charts showing the distribution of tasks by status and category
-- **Task Statistics**: Quick overview of task counts by status
-- **Overdue & Due Today Highlights**: Special sections for time-sensitive tasks
-- **Mobile-Optimized Interface**: Responsive design with modal editing for better mobile experience
-- **Search Functionality**: Quickly find tasks by searching through titles, descriptions, categories, and more
+### 📝 Core Task Management
 
-### Data Management
-- Local storage persistence to save tasks between sessions
+* Create tasks with **title**, **description**, **priority**, and **status**
+* View tasks **sorted by priority**
+* **Update** and **delete** tasks
+* **Filter** tasks by status: `To-Do`, `In Progress`, `Done`
 
-## Extreme Programming Practices Implemented
+### 🛠️ Enhanced Functionality
 
-### 1. Pair Programming
-The codebase is structured to facilitate pair programming:
-- Clear component separation with well-defined responsibilities
-- Consistent coding style and patterns
-- Descriptive variable and function names
-- Comprehensive comments explaining complex logic
+* **Task Categories**: Organize tasks (Work, Personal, Study, Health, Finance, Home, Other)
+* **Due Dates**: Set and track task deadlines
+* **Visual Charts**: View task distribution by status and category with interactive charts
+* **Task Statistics**: Quick overview of tasks per status
+* **Overdue & Due Today**: Highlights for time-sensitive tasks
+* **Search Functionality**: Find tasks by keyword (title, description, category, etc.)
+* **Mobile Optimized**: Responsive design with modal editing for small screens
 
-### 2. Test-Driven Development (TDD)
-The application includes comprehensive tests:
-- Unit tests for components using Jest and React Testing Library
-- Tests written before implementing features
-- Test coverage for critical functionality
+### 💾 Data Management
 
-### 3. Continuous Integration
-The project includes CI configuration:
-- GitHub Actions workflow for automated testing
-- Linting checks to maintain code quality
-- Automated test runs on each commit
+* **LocalStorage Persistence**: Tasks remain saved across sessions
 
-### 4. Small Releases
-The application is built with incremental development in mind:
-- Core functionality implemented first
-- Features added incrementally
-- Each feature is self-contained and testable
+---
 
-### 5. Refactoring
-The codebase demonstrates clean code principles:
-- DRY (Don't Repeat Yourself) principles applied
-- Common functionality extracted into reusable hooks and utilities
-- Clear separation of concerns
-- Consistent naming conventions
+## 🧪 Extreme Programming Practices
 
-### 6. Customer Collaboration
-The application is designed with user feedback in mind:
-- Intuitive UI that requires minimal training
-- Clear visual indicators for task status and priority
-- Helpful feedback messages
-- Responsive design for all devices
+### 👯 1. Pair Programming
 
-### 7. Planning Game
-The development process followed a planning approach:
-- User stories broken down into manageable tasks
-- Features prioritized based on user needs
-- Estimates for implementation effort
-- Iterative development cycle
+* Component separation for collaborative development
+* Descriptive naming & clean structure
+* Detailed comments for complex logic
 
-## Getting Started
+### 🧪 2. Test-Driven Development (TDD)
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run the development server: `npm run dev`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+* Unit tests using **Jest** and **React Testing Library**
+* Tests written **before** feature implementation
+* High test coverage on core features
 
-## Testing
+### 🔁 3. Continuous Integration
 
-Run tests with: `npm test`
+* **GitHub Actions** for:
 
-## Built With
+  * Automated test execution
+  * Linting checks
+  * Quality enforcement on every commit
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- shadcn/ui components
-- Recharts for data visualization
-- Jest and React Testing Library for testing
+### 🚀 4. Small Releases
 
-## Project Structure
+* Incremental feature rollout
+* Each feature is independently testable and deployable
 
-\`\`\`
+### 🔧 5. Refactoring
+
+* **DRY principles** and reusable hooks
+* Clear separation of concerns
+* Clean, readable, and consistent code
+
+### 🤝 6. Customer Collaboration
+
+* Minimal learning curve
+* Visual cues for task status and urgency
+* Mobile-first design with intuitive feedback
+
+### 📅 7. Planning Game
+
+* Features based on user stories
+* Estimations & prioritization for implementation
+* Agile, iterative development approach
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/task-easy.git
+cd task-easy
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🧪 Testing
+
+Run tests using:
+
+```bash
+npm test
+```
+
+---
+
+## 🛠️ Built With
+
+* [Next.js](https://nextjs.org/)
+* [React](https://reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [shadcn/ui](https://ui.shadcn.com/)
+* [Recharts](https://recharts.org/) - for charts and visual stats
+* [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+
+---
+
+## 📁 Project Structure
+
+```
 task-easy/
-├── app/                  # Next.js app directory
-│   ├── globals.css       # Global styles
-│   ├── layout.tsx        # Root layout component
-│   └── page.tsx          # Main application page
-├── components/           # React components
-│   ├── search-input.tsx  # Search functionality
-│   ├── task-edit-dialog.tsx # Task editing modal
-│   ├── task-form.tsx     # Task creation/editing form
-│   └── task-list.tsx     # Task list display
-├── types/                # TypeScript type definitions
-│   └── task.ts           # Task interface
-├── __tests__/            # Test files
+├── app/                     # Next.js app directory
+│   ├── globals.css          # Global styles
+│   ├── layout.tsx           # Root layout
+│   └── page.tsx             # Main page
+├── components/              # UI components
+│   ├── search-input.tsx     
+│   ├── task-edit-dialog.tsx 
+│   ├── task-form.tsx        
+│   └── task-list.tsx        
+├── types/                   # Type definitions
+│   └── task.ts              
+├── __tests__/               # Test files
 │   ├── task-form.test.tsx
 │   ├── task-list.test.tsx
 │   ├── search-input.test.tsx
 │   └── task-edit-dialog.test.tsx
-├── .github/workflows/    # CI configuration
-│   └── ci.yml            # GitHub Actions workflow
-├── jest.config.js        # Jest configuration
-├── jest.setup.js         # Jest setup
-└── README.md             # Project documentation
+├── .github/workflows/       # CI configs
+│   └── ci.yml               
+├── jest.config.js           
+├── jest.setup.js            
+└── README.md                
+```
+
+---
+
+## 👨‍💻 Meet Our Team
+
+We are **Team 4 Developers** committed to delivering clean, user-focused software through XP practices.
+
+| Name             | Student ID |
+| ---------------- | ---------- |
+| Silvani Chayadi  | 231112945  |
+| Cindy Nathania   | 231111567  |
+| Gloria Apriyanti | 231111304  |
