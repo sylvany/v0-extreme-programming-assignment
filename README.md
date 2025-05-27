@@ -80,8 +80,7 @@ A **lightweight** and **responsive** task management web application built with 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/task-easy.git
-cd task-easy
+git clone https://github.com/sylvany/v0-extreme-programming-assignment
 
 # Install dependencies
 npm install
@@ -111,7 +110,7 @@ npm test
 * [TypeScript](https://www.typescriptlang.org/)
 * [Tailwind CSS](https://tailwindcss.com/)
 * [shadcn/ui](https://ui.shadcn.com/)
-* [Recharts](https://recharts.org/) - for charts and visual stats
+* [Recharts](https://recharts.org/)
 * [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
 
 ---
